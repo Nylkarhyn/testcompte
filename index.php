@@ -15,7 +15,7 @@
 
 
 <?php
-$servername = "db:3306";
+$servername = "localhost";
 $username = "root";
 $password = "a";
 $dbname = "compte";
