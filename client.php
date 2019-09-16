@@ -4,7 +4,7 @@
 <?php
 $servername = "db:3306";
 $username = "root";
-$password = "";
+$password = "a";
 $dbname = "compte";
 
 // Create connection
