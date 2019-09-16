@@ -2,7 +2,7 @@
 <table>
 
 <?php
-$servername = "localhost:3306";
+$servername = "localhost";
 $username = "root";
 $password = "a";
 $dbname = "compte";
