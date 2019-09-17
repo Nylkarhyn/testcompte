@@ -33,6 +33,7 @@ if ($conn->connect_error) {
 //echo '<a href="client.php?user='. $row["id"] . '">accéder à la liste client </a><br>';
 
 echo '<a href="client.php"> liste clients</a><br>';
+echo '<a href="ajoutclient.html"> ajouter un nouveau client</a><br>';
 
 $sql = "SELECT id from client";
 $result = $conn->query($sql);
