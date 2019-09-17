@@ -18,4 +18,18 @@ $dn = $_POST['dn'];
 $sql = "INSERT INTO client (nom, prenom, date_de_naissance) VALUES ('$nom', '$prenom', '$dn')";
 $result = $conn->query($sql);
 
+
+if ($result == true) {
+    echo "ajout de client réussi";
+}else{
+    echo "erreur";
+}
+
+$conn->close();
+
 ?>
+<br>
+<br>
+<br>
+
+<a href="index.php"> retour</a><br>
