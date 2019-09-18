@@ -25,6 +25,8 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
 
         echo "id: " . $row["id"] . " - Name: " . $row["nom"] . " " . $row["prenom"] . " " . " - date de naissance: " . $row["date_de_naissance"] . "<br>";
+        echo '<a href="compte.php?user='. $row["id"] . '">afficher compte de ' . $row["id"] . '</a>';
+        echo "<a href=\"ajoutcompte.php?idclient=".$row['id']."\"> ajouter un nouveau compte</a><br><br><br>";
     }
    
     
