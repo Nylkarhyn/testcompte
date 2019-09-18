@@ -29,6 +29,10 @@
         caption {
             font-family: sans-serif;
         }
+
+        .depot {
+            font-weight: bold
+        }
     </style>
 </head>
 <body>
@@ -96,7 +100,7 @@
 
             echo "<tr><td>" . $row["idC"].  "</td><td>" . $row["type"]. "</td><td>" . $row["montant"]. "</td><td>" . $row["date"]. " </td></b></tr>" ;
         }else{
-            echo "<tr><b><td>" . $row["idC"].  "</td><td>" . $row["type"]. "</td><td>" . $row["montant"]. "</td><td>" . $row["date"]. " </td></b></tr>" ;
+            echo "<tr class=\"depot\"><td>" . $row["idC"].  "</td><td>" . $row["type"]. "</td><td>" . $row["montant"]. "</td><td>" . $row["date"]. " </td></tr>" ;
         }
     }
 
