@@ -34,13 +34,13 @@ if ($conn->connect_error) {
 
 echo '<a href="client.php"> liste clients</a><br>';
 echo '<a href="ajoutclient.html"> ajouter un nouveau client</a><br>';
-echo '<a href="ajoutcompte.html"> ajouter un nouveau compte</a><br>';
+//echo '<a href="ajoutcompte.html"> ajouter un nouveau compte</a><br>';
 
-$sql = "SELECT id from client";
-$result = $conn->query($sql);
-while($row = $result->fetch_assoc()) {
-    echo '<a href="compte.php?user='. $row["id"] . '">afficher compte de "' . $row["id"] . '</a><br>';
-}
+//$sql = "SELECT id from client";
+//$result = $conn->query($sql);
+//while($row = $result->fetch_assoc()) {
+ //   echo '<a href="compte.php?user='. $row["id"] . '">afficher compte de "' . $row["id"] . '</a><br>';
+//}
 
 ?>
 </body>

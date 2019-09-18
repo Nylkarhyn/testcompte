@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="POST" action="addcompte.php" >
+
+    idClient : <input name="idClient" type="number" value="<?php echo $_GET['idclient'] ?>"  readonly /> <br>
+	numéro de compte : <input name="numero_compte" type="number"/> <br>
+    solde : <input name="solde" type="number"/>
+
+    <input type="Submit" value="envoye" />
+
+</form>
+</body>
+</html>
