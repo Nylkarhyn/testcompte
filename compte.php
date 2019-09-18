@@ -81,7 +81,7 @@ $conn->close();
 ?>
 </table>
 <?php
-echo '<a href="index.php"> retour</a><br>';
+echo '<a href="client.php"> retour</a><br>';
 ?>
 </body>
 </html>

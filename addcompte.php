@@ -31,4 +31,4 @@ $conn->close();
 <br>
 <br>
 
-<a href="index.php"> retour</a><br>
+<a href="client.php"> retour</a><br>
