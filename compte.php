@@ -39,6 +39,8 @@
     <th>id compte</th>
     <th>numero de compte</th>
     <th>solde</th>
+    <th>transaction</th>
+    <th>liste transactions</th>
 </tr>
 <?php
 
@@ -66,7 +68,9 @@ if (isset($_GET['user'])) {
         echo "<tr> ";
 
         echo "<td>" . $row["idC"].  "</td><td>" . $row["numero_compte"]. "</td><td>" . $row["solde"]. " </td>" ;
-     echo "</tr>";
+        echo "<td>" . '<a href="ajouttransaction.php?idCompte='. $row['idC'] .' "> ajouter une nouvelle transaction</a>' . "</td>";
+        echo "<td>" . '<a href="listeTransaction.php?idCompte='. $row['idC'] .' "> liste des transactions</a>' . "</td>";
+        echo "</tr>";
         }
 
     } else {
